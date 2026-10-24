@@ -1,0 +1,10 @@
+﻿method,seed,correct,truncated,parse,count,tool,key,value
+continue,42,69,1,9,21,14,25,20
+continue,43,73,1,7,22,13,26,17
+continue,44,69,1,10,22,13,24,20
+sparse,42,70,0,7,25,14,26,17
+sparse,43,66,1,11,24,15,25,17
+sparse,44,68,0,9,25,11,26,20
+dense,42,64,1,11,22,17,20,24
+dense,43,67,0,9,24,14,25,20
+dense,44,69,1,10,24,12,23,20

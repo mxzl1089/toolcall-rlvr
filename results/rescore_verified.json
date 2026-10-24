@@ -1,0 +1,38 @@
+{
+  "sparse_with_format": {
+    "groups": 600,
+    "candidates": 2400,
+    "nonzero_advantage_groups": 230,
+    "positive_candidates": 496,
+    "strict_wrong_positive": 177,
+    "all_wrong_groups": 289,
+    "all_wrong_nonzero_groups": 73
+  },
+  "sparse_correctness_only": {
+    "groups": 600,
+    "candidates": 2400,
+    "nonzero_advantage_groups": 156,
+    "positive_candidates": 316,
+    "strict_wrong_positive": 0,
+    "all_wrong_groups": 289,
+    "all_wrong_nonzero_groups": 0
+  },
+  "dense_with_format": {
+    "groups": 600,
+    "candidates": 2400,
+    "nonzero_advantage_groups": 346,
+    "positive_candidates": 751,
+    "strict_wrong_positive": 432,
+    "all_wrong_groups": 289,
+    "all_wrong_nonzero_groups": 189
+  },
+  "dense_correctness_only": {
+    "groups": 600,
+    "candidates": 2400,
+    "nonzero_advantage_groups": 333,
+    "positive_candidates": 710,
+    "strict_wrong_positive": 394,
+    "all_wrong_groups": 289,
+    "all_wrong_nonzero_groups": 177
+  }
+}

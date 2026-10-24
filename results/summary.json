@@ -1,0 +1,121 @@
+{
+  "source": "Existing frozen report; no retraining during repository preparation",
+  "main": {
+    "test_questions": 159,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "predictions_per_branch": 477,
+    "correct": {
+      "continue": 211,
+      "sparse": 204,
+      "dense": 200
+    },
+    "dense_minus_sparse_pp": -0.8385744234800839,
+    "paired_ci95_pp": [
+      -2.94,
+      1.05
+    ]
+  },
+  "errors_first_failure": {
+    "continue": [
+      29,
+      65,
+      40,
+      75,
+      57
+    ],
+    "sparse": [
+      28,
+      74,
+      40,
+      77,
+      54
+    ],
+    "dense": [
+      32,
+      70,
+      43,
+      68,
+      64
+    ]
+  },
+  "error_order": [
+    "parse",
+    "count",
+    "name",
+    "keys",
+    "value_or_type"
+  ],
+  "rescore_dense_trajectory": {
+    "groups": 600,
+    "candidates": 2400,
+    "sparse_with_format": [
+      230,
+      496,
+      177
+    ],
+    "dense_with_format": [
+      346,
+      751,
+      432
+    ],
+    "sparse_correctness_only": [
+      156,
+      316,
+      0
+    ],
+    "dense_correctness_only": [
+      333,
+      710,
+      394
+    ],
+    "columns": [
+      "nonzero_groups",
+      "positive_candidates",
+      "strict_wrong_positive"
+    ]
+  },
+  "mechanism": {
+    "seeds": 3,
+    "questions": 159,
+    "identity_percent": 42.98,
+    "gate_percent": 41.72,
+    "random_percent": 39.41,
+    "gate_minus_identity_ci95_pp": [
+      -2.94,
+      0.42
+    ]
+  },
+  "extension": {
+    "unique_training_examples": 973,
+    "epochs": 2,
+    "exposures": 1946,
+    "candidates": 7784,
+    "val_n": 93,
+    "test_n": 159,
+    "exposure_marks": [
+      0,
+      200,
+      500,
+      973,
+      1450,
+      1946
+    ],
+    "validation_correct": [
+      32,
+      36,
+      38,
+      38,
+      39,
+      36
+    ],
+    "test_correct_before_after": [
+      64,
+      77
+    ]
+  },
+  "error_count_note": "summary parse combines length-limit unclosed outputs and other parse failures; per_prediction.csv and reproduce_statistics.py separate these categories"
+}

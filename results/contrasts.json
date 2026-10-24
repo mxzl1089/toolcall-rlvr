@@ -1,0 +1,70 @@
+{
+  "dense_42-sparse_42": {
+    "difference_pp": -3.7735849056603774,
+    "ci95_pp": [
+      -7.547169811320755,
+      0.0
+    ],
+    "samples": 159,
+    "seed": 20261013,
+    "bootstrap_repeats": 10000
+  },
+  "dense_42-continue_42": {
+    "difference_pp": -3.1446540880503147,
+    "ci95_pp": [
+      -7.547169811320755,
+      0.628930817610063
+    ],
+    "samples": 159,
+    "seed": 20261013,
+    "bootstrap_repeats": 10000
+  },
+  "dense_43-sparse_43": {
+    "difference_pp": 0.628930817610063,
+    "ci95_pp": [
+      -1.257861635220126,
+      2.515723270440252
+    ],
+    "samples": 159,
+    "seed": 20261013,
+    "bootstrap_repeats": 10000
+  },
+  "dense_43-continue_43": {
+    "difference_pp": -3.7735849056603774,
+    "ci95_pp": [
+      -7.547169811320755,
+      -0.628930817610063
+    ],
+    "samples": 159,
+    "seed": 20261013,
+    "bootstrap_repeats": 10000
+  },
+  "dense_44-sparse_44": {
+    "difference_pp": 0.628930817610063,
+    "ci95_pp": [
+      -2.515723270440252,
+      3.7735849056603774
+    ],
+    "samples": 159,
+    "seed": 20261013,
+    "bootstrap_repeats": 10000
+  },
+  "dense_44-continue_44": {
+    "difference_pp": 0.0,
+    "ci95_pp": [
+      -3.7735849056603774,
+      3.7735849056603774
+    ],
+    "samples": 159,
+    "seed": 20261013,
+    "bootstrap_repeats": 10000
+  },
+  "fixed_three_seed_mean_dense_minus_sparse": {
+    "difference_pp": -0.8385744234800837,
+    "ci95_pp": [
+      -2.935010482180293,
+      1.0482180293501049
+    ],
+    "scope": "sample uncertainty conditional on these three seeds; not full training variance"
+  }
+}

@@ -1,0 +1,7602 @@
+{
+  "version": "v3",
+  "parent_version": "v2",
+  "parent_sha256": "56c16d33022b2dfbcfd3fba0fc9fb92960ff647940efd861741d6404def61d00",
+  "removed_ids": [
+    {
+      "id": 233,
+      "reason": "消除 echo/Echo 与 val 2001 的工具名交叉"
+    },
+    {
+      "id": 1489,
+      "reason": "消除 asset 与 test 2206 的工具名交叉"
+    },
+    {
+      "id": 2686,
+      "reason": "消除 emailverifier 与 test 2678 的工具名交叉"
+    },
+    {
+      "id": 3316,
+      "reason": "消除 sources 与 test 1974 的工具名交叉"
+    },
+    {
+      "id": 194,
+      "reason": "标签损坏：参数值为截断 SQL，尾部泄漏成伪调用 {\"name\":\"address VARCHAR\",\"parameters\":{}}"
+    }
+  ],
+  "removal_rationale_fixed_before_testing": true,
+  "created_at": "2026-10-13T22:20:28.104852+08:00",
+  "seed": 20261013,
+  "source": {
+    "train_parquet_sha256": "f2e728ad4a379550887711870db5f97154a0ecc45efbe5d43db8a99dc3b9e1c8",
+    "test_parquet_sha256": "f7f300ebe755fd04985c83e18097d5a94a08619d72809fe06128ed3f00da7554",
+    "tokenizer_config_sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+  },
+  "rules": {
+    "prompt_max_tokens": 768,
+    "target_max_tokens": 128,
+    "requires_tool_call": true,
+    "exclude_train_names_appearing_in_official_test": true,
+    "holdout_tool_name_disjoint": true,
+    "dedup_exact_prompt": true
+  },
+  "counts": {
+    "train": 973,
+    "val": 93,
+    "test": 159,
+    "official": 32
+  },
+  "indices": {
+    "train": [
+      2,
+      3,
+      12,
+      13,
+      16,
+      18,
+      22,
+      28,
+      35,
+      38,
+      42,
+      43,
+      44,
+      47,
+      49,
+      52,
+      56,
+      57,
+      62,
+      66,
+      67,
+      70,
+      73,
+      75,
+      84,
+      85,
+      92,
+      93,
+      94,
+      95,
+      96,
+      98,
+      99,
+      103,
+      105,
+      108,
+      109,
+      111,
+      116,
+      122,
+      130,
+      136,
+      138,
+      144,
+      145,
+      147,
+      153,
+      157,
+      162,
+      164,
+      170,
+      171,
+      174,
+      178,
+      179,
+      183,
+      186,
+      187,
+      188,
+      195,
+      211,
+      215,
+      226,
+      231,
+      243,
+      247,
+      249,
+      262,
+      263,
+      264,
+      267,
+      272,
+      273,
+      274,
+      277,
+      281,
+      284,
+      286,
+      295,
+      304,
+      306,
+      309,
+      317,
+      319,
+      320,
+      321,
+      326,
+      327,
+      328,
+      334,
+      336,
+      345,
+      358,
+      363,
+      367,
+      377,
+      379,
+      380,
+      382,
+      383,
+      387,
+      389,
+      395,
+      403,
+      407,
+      409,
+      416,
+      417,
+      418,
+      419,
+      420,
+      426,
+      439,
+      444,
+      445,
+      449,
+      454,
+      456,
+      459,
+      460,
+      462,
+      470,
+      473,
+      474,
+      484,
+      488,
+      493,
+      498,
+      501,
+      503,
+      505,
+      507,
+      509,
+      513,
+      515,
+      518,
+      519,
+      532,
+      541,
+      545,
+      546,
+      567,
+      569,
+      570,
+      577,
+      581,
+      583,
+      585,
+      588,
+      590,
+      591,
+      592,
+      599,
+      600,
+      601,
+      603,
+      606,
+      609,
+      620,
+      634,
+      636,
+      639,
+      640,
+      643,
+      648,
+      657,
+      680,
+      683,
+      684,
+      686,
+      688,
+      691,
+      697,
+      701,
+      704,
+      705,
+      706,
+      709,
+      710,
+      713,
+      714,
+      715,
+      721,
+      726,
+      729,
+      732,
+      737,
+      738,
+      739,
+      742,
+      743,
+      752,
+      753,
+      759,
+      764,
+      768,
+      771,
+      773,
+      777,
+      783,
+      784,
+      788,
+      793,
+      803,
+      810,
+      813,
+      817,
+      821,
+      823,
+      825,
+      828,
+      830,
+      834,
+      835,
+      836,
+      838,
+      845,
+      846,
+      848,
+      850,
+      860,
+      862,
+      865,
+      866,
+      869,
+      873,
+      874,
+      876,
+      878,
+      880,
+      882,
+      883,
+      894,
+      904,
+      913,
+      916,
+      922,
+      932,
+      934,
+      935,
+      937,
+      938,
+      947,
+      954,
+      960,
+      963,
+      970,
+      973,
+      976,
+      978,
+      981,
+      982,
+      985,
+      1003,
+      1005,
+      1008,
+      1011,
+      1013,
+      1017,
+      1020,
+      1021,
+      1022,
+      1025,
+      1031,
+      1032,
+      1034,
+      1035,
+      1039,
+      1044,
+      1054,
+      1057,
+      1058,
+      1061,
+      1067,
+      1070,
+      1078,
+      1079,
+      1081,
+      1082,
+      1090,
+      1091,
+      1092,
+      1093,
+      1094,
+      1100,
+      1110,
+      1113,
+      1114,
+      1117,
+      1128,
+      1135,
+      1144,
+      1153,
+      1154,
+      1160,
+      1162,
+      1163,
+      1171,
+      1183,
+      1184,
+      1188,
+      1189,
+      1192,
+      1193,
+      1198,
+      1203,
+      1205,
+      1206,
+      1209,
+      1212,
+      1216,
+      1225,
+      1227,
+      1232,
+      1236,
+      1239,
+      1244,
+      1251,
+      1258,
+      1262,
+      1265,
+      1267,
+      1268,
+      1274,
+      1280,
+      1285,
+      1292,
+      1296,
+      1299,
+      1311,
+      1336,
+      1342,
+      1345,
+      1346,
+      1348,
+      1352,
+      1353,
+      1354,
+      1361,
+      1365,
+      1366,
+      1371,
+      1374,
+      1376,
+      1378,
+      1382,
+      1383,
+      1388,
+      1391,
+      1396,
+      1397,
+      1404,
+      1408,
+      1415,
+      1416,
+      1418,
+      1426,
+      1429,
+      1430,
+      1435,
+      1439,
+      1442,
+      1449,
+      1451,
+      1457,
+      1461,
+      1467,
+      1468,
+      1470,
+      1476,
+      1479,
+      1485,
+      1487,
+      1490,
+      1491,
+      1492,
+      1500,
+      1501,
+      1506,
+      1509,
+      1512,
+      1517,
+      1519,
+      1525,
+      1526,
+      1527,
+      1532,
+      1542,
+      1543,
+      1550,
+      1553,
+      1556,
+      1557,
+      1561,
+      1563,
+      1569,
+      1571,
+      1572,
+      1580,
+      1582,
+      1592,
+      1596,
+      1598,
+      1599,
+      1601,
+      1608,
+      1615,
+      1616,
+      1618,
+      1620,
+      1621,
+      1623,
+      1625,
+      1626,
+      1629,
+      1630,
+      1636,
+      1638,
+      1640,
+      1643,
+      1644,
+      1650,
+      1658,
+      1662,
+      1663,
+      1670,
+      1673,
+      1676,
+      1678,
+      1679,
+      1682,
+      1686,
+      1690,
+      1706,
+      1707,
+      1709,
+      1710,
+      1729,
+      1735,
+      1743,
+      1744,
+      1745,
+      1746,
+      1748,
+      1760,
+      1765,
+      1768,
+      1772,
+      1775,
+      1776,
+      1777,
+      1779,
+      1787,
+      1791,
+      1799,
+      1800,
+      1801,
+      1804,
+      1806,
+      1809,
+      1813,
+      1817,
+      1829,
+      1830,
+      1833,
+      1834,
+      1835,
+      1837,
+      1839,
+      1844,
+      1846,
+      1850,
+      1851,
+      1858,
+      1859,
+      1860,
+      1874,
+      1877,
+      1878,
+      1880,
+      1883,
+      1884,
+      1885,
+      1887,
+      1890,
+      1895,
+      1902,
+      1911,
+      1915,
+      1925,
+      1930,
+      1934,
+      1940,
+      1942,
+      1946,
+      1947,
+      1948,
+      1951,
+      1955,
+      1968,
+      1980,
+      1984,
+      1986,
+      1989,
+      1999,
+      2000,
+      2004,
+      2008,
+      2010,
+      2012,
+      2020,
+      2021,
+      2024,
+      2027,
+      2030,
+      2033,
+      2037,
+      2043,
+      2046,
+      2053,
+      2074,
+      2078,
+      2081,
+      2089,
+      2092,
+      2096,
+      2098,
+      2099,
+      2100,
+      2101,
+      2103,
+      2104,
+      2110,
+      2115,
+      2116,
+      2126,
+      2128,
+      2129,
+      2133,
+      2136,
+      2137,
+      2146,
+      2150,
+      2153,
+      2154,
+      2155,
+      2160,
+      2165,
+      2172,
+      2173,
+      2176,
+      2178,
+      2185,
+      2193,
+      2196,
+      2200,
+      2205,
+      2207,
+      2208,
+      2210,
+      2213,
+      2224,
+      2239,
+      2243,
+      2245,
+      2249,
+      2257,
+      2260,
+      2268,
+      2272,
+      2273,
+      2281,
+      2284,
+      2288,
+      2291,
+      2293,
+      2297,
+      2299,
+      2304,
+      2305,
+      2308,
+      2313,
+      2319,
+      2320,
+      2327,
+      2331,
+      2333,
+      2339,
+      2346,
+      2350,
+      2355,
+      2357,
+      2360,
+      2363,
+      2367,
+      2371,
+      2383,
+      2384,
+      2385,
+      2386,
+      2391,
+      2393,
+      2394,
+      2395,
+      2396,
+      2401,
+      2409,
+      2412,
+      2413,
+      2414,
+      2419,
+      2421,
+      2422,
+      2424,
+      2439,
+      2455,
+      2457,
+      2459,
+      2460,
+      2462,
+      2463,
+      2465,
+      2481,
+      2486,
+      2489,
+      2490,
+      2493,
+      2495,
+      2496,
+      2497,
+      2498,
+      2503,
+      2517,
+      2518,
+      2519,
+      2521,
+      2522,
+      2524,
+      2527,
+      2528,
+      2529,
+      2531,
+      2532,
+      2539,
+      2542,
+      2545,
+      2549,
+      2554,
+      2555,
+      2565,
+      2571,
+      2572,
+      2574,
+      2585,
+      2586,
+      2591,
+      2595,
+      2604,
+      2613,
+      2621,
+      2626,
+      2627,
+      2628,
+      2631,
+      2637,
+      2648,
+      2650,
+      2654,
+      2655,
+      2656,
+      2665,
+      2674,
+      2676,
+      2679,
+      2682,
+      2684,
+      2691,
+      2692,
+      2694,
+      2700,
+      2705,
+      2706,
+      2709,
+      2712,
+      2715,
+      2719,
+      2720,
+      2722,
+      2725,
+      2734,
+      2745,
+      2746,
+      2751,
+      2753,
+      2758,
+      2764,
+      2765,
+      2768,
+      2769,
+      2773,
+      2777,
+      2787,
+      2789,
+      2794,
+      2801,
+      2802,
+      2810,
+      2815,
+      2816,
+      2819,
+      2821,
+      2822,
+      2824,
+      2826,
+      2827,
+      2831,
+      2843,
+      2850,
+      2856,
+      2860,
+      2866,
+      2867,
+      2870,
+      2874,
+      2879,
+      2880,
+      2883,
+      2884,
+      2889,
+      2892,
+      2893,
+      2895,
+      2896,
+      2897,
+      2899,
+      2903,
+      2906,
+      2907,
+      2911,
+      2918,
+      2920,
+      2927,
+      2934,
+      2948,
+      2950,
+      2952,
+      2954,
+      2956,
+      2960,
+      2961,
+      2966,
+      2969,
+      2978,
+      2993,
+      2994,
+      2997,
+      3003,
+      3016,
+      3022,
+      3026,
+      3035,
+      3036,
+      3040,
+      3045,
+      3054,
+      3055,
+      3061,
+      3067,
+      3070,
+      3071,
+      3073,
+      3074,
+      3085,
+      3086,
+      3087,
+      3095,
+      3100,
+      3107,
+      3108,
+      3110,
+      3112,
+      3113,
+      3117,
+      3119,
+      3122,
+      3124,
+      3125,
+      3128,
+      3133,
+      3139,
+      3144,
+      3147,
+      3152,
+      3155,
+      3156,
+      3159,
+      3160,
+      3163,
+      3168,
+      3169,
+      3173,
+      3175,
+      3183,
+      3184,
+      3188,
+      3190,
+      3195,
+      3199,
+      3204,
+      3211,
+      3218,
+      3223,
+      3229,
+      3231,
+      3235,
+      3237,
+      3238,
+      3239,
+      3243,
+      3244,
+      3263,
+      3272,
+      3273,
+      3282,
+      3283,
+      3285,
+      3287,
+      3288,
+      3289,
+      3292,
+      3295,
+      3296,
+      3300,
+      3305,
+      3307,
+      3309,
+      3314,
+      3319,
+      3331,
+      3332,
+      3333,
+      3341,
+      3342,
+      3344,
+      3346,
+      3347,
+      3353,
+      3365,
+      3373,
+      3376,
+      3379,
+      3386,
+      3389,
+      3394,
+      3399,
+      3405,
+      3412,
+      3414,
+      3415,
+      3418,
+      3425,
+      3435,
+      3440,
+      3445,
+      3460,
+      3463,
+      3465,
+      3466,
+      3473,
+      3476,
+      3477,
+      3479,
+      3480,
+      3496,
+      3501,
+      3505,
+      3511,
+      3514,
+      3515,
+      3522,
+      3527,
+      3543,
+      3544,
+      3559,
+      3563,
+      3566,
+      3569,
+      3571,
+      3574,
+      3576,
+      3577,
+      3578,
+      3581,
+      3583,
+      3588,
+      3590,
+      3594,
+      3603,
+      3606,
+      3617,
+      3618,
+      3619,
+      3622,
+      3624,
+      3625,
+      3631,
+      3640,
+      3643,
+      3645,
+      3660,
+      3662,
+      3670,
+      3671,
+      3672,
+      3674,
+      3676,
+      3682,
+      3684,
+      3686,
+      3691,
+      3693,
+      3697,
+      3704,
+      3708,
+      3714,
+      3717,
+      3720,
+      3730,
+      3738,
+      3740,
+      3742,
+      3744,
+      3752,
+      3755,
+      3759,
+      3761,
+      3770,
+      3800,
+      3804,
+      3805,
+      3808,
+      3809,
+      3821,
+      3824,
+      3827,
+      3828,
+      3830,
+      3835,
+      3844,
+      3849,
+      3851,
+      3853,
+      3863,
+      3864,
+      3866,
+      3869,
+      3871,
+      3872,
+      3879,
+      3880,
+      3881,
+      3882,
+      3883,
+      3887,
+      3899,
+      3900,
+      3903,
+      3905,
+      3907,
+      3908,
+      3912,
+      3915,
+      3918
+    ],
+    "val": [
+      64,
+      127,
+      176,
+      253,
+      278,
+      296,
+      325,
+      343,
+      353,
+      391,
+      431,
+      482,
+      553,
+      554,
+      587,
+      594,
+      629,
+      728,
+      734,
+      763,
+      781,
+      789,
+      809,
+      858,
+      859,
+      987,
+      992,
+      1040,
+      1080,
+      1084,
+      1104,
+      1156,
+      1169,
+      1202,
+      1222,
+      1275,
+      1310,
+      1323,
+      1329,
+      1401,
+      1432,
+      1438,
+      1586,
+      1590,
+      1647,
+      1796,
+      1908,
+      1914,
+      1927,
+      1941,
+      1964,
+      1970,
+      2001,
+      2015,
+      2047,
+      2120,
+      2139,
+      2143,
+      2255,
+      2289,
+      2307,
+      2324,
+      2351,
+      2354,
+      2387,
+      2420,
+      2566,
+      2590,
+      2622,
+      2641,
+      2683,
+      2721,
+      2727,
+      2809,
+      2943,
+      3023,
+      3027,
+      3123,
+      3176,
+      3201,
+      3327,
+      3420,
+      3450,
+      3518,
+      3524,
+      3558,
+      3633,
+      3644,
+      3688,
+      3768,
+      3817,
+      3858,
+      3877
+    ],
+    "test": [
+      5,
+      20,
+      51,
+      76,
+      78,
+      88,
+      112,
+      167,
+      168,
+      185,
+      216,
+      238,
+      244,
+      260,
+      360,
+      376,
+      432,
+      495,
+      520,
+      525,
+      529,
+      549,
+      614,
+      700,
+      772,
+      842,
+      900,
+      907,
+      946,
+      980,
+      996,
+      1000,
+      1016,
+      1077,
+      1083,
+      1086,
+      1098,
+      1132,
+      1174,
+      1194,
+      1199,
+      1230,
+      1233,
+      1238,
+      1240,
+      1284,
+      1293,
+      1306,
+      1413,
+      1454,
+      1460,
+      1474,
+      1478,
+      1481,
+      1495,
+      1514,
+      1533,
+      1574,
+      1604,
+      1634,
+      1672,
+      1726,
+      1848,
+      1863,
+      1873,
+      1960,
+      1963,
+      1974,
+      1977,
+      1998,
+      2026,
+      2035,
+      2060,
+      2069,
+      2076,
+      2114,
+      2124,
+      2156,
+      2158,
+      2171,
+      2195,
+      2206,
+      2215,
+      2226,
+      2271,
+      2298,
+      2322,
+      2330,
+      2398,
+      2428,
+      2504,
+      2564,
+      2570,
+      2601,
+      2647,
+      2661,
+      2678,
+      2713,
+      2723,
+      2749,
+      2766,
+      2772,
+      2812,
+      2839,
+      2855,
+      2873,
+      2905,
+      2917,
+      2959,
+      2964,
+      2976,
+      2977,
+      2996,
+      3029,
+      3089,
+      3115,
+      3146,
+      3149,
+      3158,
+      3161,
+      3203,
+      3232,
+      3248,
+      3258,
+      3335,
+      3359,
+      3384,
+      3395,
+      3397,
+      3433,
+      3448,
+      3474,
+      3483,
+      3488,
+      3490,
+      3509,
+      3535,
+      3536,
+      3555,
+      3561,
+      3564,
+      3595,
+      3635,
+      3665,
+      3673,
+      3680,
+      3689,
+      3701,
+      3703,
+      3732,
+      3756,
+      3757,
+      3772,
+      3781,
+      3790,
+      3802,
+      3857,
+      3890,
+      3911
+    ]
+  },
+  "official_test_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "official_short_tool_test_indices": [
+    3,
+    5,
+    6,
+    7,
+    10,
+    12,
+    14,
+    15,
+    16,
+    20,
+    26,
+    31,
+    34,
+    39,
+    40,
+    41,
+    42,
+    46,
+    47,
+    53,
+    55,
+    63,
+    65,
+    66,
+    67,
+    68,
+    72,
+    73,
+    74,
+    75,
+    77,
+    78
+  ],
+  "cleaning_rules": {
+    "version": "schema-valid-v1",
+    "unknown_parameter": "exclude sample if any labelled parameter key is absent from its tool schema",
+    "primitive_types": "str/string=>str; int/integer=>int excluding bool; float/number=>int or float excluding bool; bool/boolean=>bool; dict/object=>dict; list/array=>list",
+    "containers": "List[T] recursively validates elements; Tuple[T1,T2] uses fixed-length JSON list; Dict is dict; Union accepts any member",
+    "optional": "comma optional denotes omissible field, not nullable value; no required-key inference from defaults",
+    "unsupported": "exclude samples with used parameter types not safely representable/recognized (e.g. Callable)",
+    "preserve": "never coerce numeric strings, decode JSON-in-string, repair labels, randomize indices or move samples between splits",
+    "model_independence": "all rules fixed without using prediction correctness; v2 diagnostic val outputs are not inputs"
+  },
+  "cleaning_authorized_by_user": true,
+  "not_a_random_resplit": true,
+  "removed_from_v2": {
+    "train": [
+      {
+        "id": 10,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "cross_cultural_communication_simulation",
+            "parameter": "participants",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "cross_cultural_communication_simulation",
+            "parameter": "\"communication_style\": \"direct\"}, {\"culture\": \"Brazil\", \"communication_style\": \"expressive\"}, {\"culture\": \"China\", \"communication_style\": \"reserved\"}], scenario"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "configTester.validateSetup",
+            "parameter": "configDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "resolveCrisis",
+            "parameter": "crisis_id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "resolveCrisis",
+            "parameter": "crisis_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "EfficiencyTracker.trackUtilizationRate",
+            "parameter": "shiftDetails",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 54,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "SavingsAccount.calculateFutureValue",
+            "parameter": "principalAmount",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "SavingsAccount.calculateFutureValue",
+            "parameter": "monthlyDeposit",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "SavingsAccount.calculateFutureValue",
+            "parameter": "interestRate",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "SavingsAccount.calculateFutureValue",
+            "parameter": "time",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 59,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Goal Distributions",
+            "parameter": "season_id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Goal Distributions",
+            "parameter": "unique_tournament_id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Goal Distributions",
+            "parameter": "team_id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Goal Distributions",
+            "parameter": "season_id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Goal Distributions",
+            "parameter": "unique_tournament_id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Goal Distributions",
+            "parameter": "team_id",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 63,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Year-End Hot 100 Songs",
+            "parameter": "year",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 68,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "textileMachine.monitorFinishingProcess",
+            "parameter": "process_details",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "textileMachine.configureDyeingParameters",
+            "parameter": "dyeing_parameters",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 90,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "DiveSafetyCourseEnrollment.enrollStudent",
+            "parameter": "student",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "DiveSafetyCourseEnrollment.enrollStudent",
+            "parameter": "\"experienceLevel\": \"Intermediate\"}, courseDetails"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "DiveSafetyCourseFeedback.collectFeedback",
+            "parameter": "feedbackEntries",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 117,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "watchDirectoryChanges",
+            "parameter": "options",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 128,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getPropellantMass",
+            "parameter": "payload_mass",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getPropellantMass",
+            "parameter": "delta_v",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getPropellantMass",
+            "parameter": "efficiency",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 131,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "findRootsPolynomial",
+            "parameter": "polynomialDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "findRootsPolynomial",
+            "parameter": "polynomialDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "findRootsPolynomial",
+            "parameter": "polynomialDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "findRootsPolynomial",
+            "parameter": "polynomialDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 140,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Game Rounds",
+            "parameter": "id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Game Rounds",
+            "parameter": "id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 146,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "safari.booking_availability",
+            "parameter": "safariDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "safari.booking_availability",
+            "parameter": "safariDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 191,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "DeviceCommunicationManager.initializeConnection",
+            "parameter": "protocol",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 205,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "coral.water_quality",
+            "parameter": "water_samples",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "coral.identify_species",
+            "parameter": "location",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "coral.identify_species",
+            "parameter": "\"longitude\": 119.8425}, date"
+          }
+        ]
+      },
+      {
+        "id": 208,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Sessions",
+            "parameter": "page_size",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 224,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "BrandImpactAnalyzer",
+            "parameter": "campaignDetails",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "CompetitiveEdgeMonitor",
+            "parameter": "brandComparison",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 229,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "GetFutureEvents",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 230,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "tailoring.get_suit_fitting_advice",
+            "parameter": "customer_measurements",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "tailoring.get_fabric_suggestions",
+            "parameter": "customer_preferences",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "tailoring.get_fabric_suggestions",
+            "parameter": "\"pattern\": \"subtle\"}, season"
+          }
+        ]
+      },
+      {
+        "id": 239,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getCOVIDCases",
+            "parameter": "only_new_cases",
+            "expected": "boolean",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getCOVIDCases",
+            "parameter": "only_new_cases",
+            "expected": "boolean",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 245,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "ev",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 246,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "clientes",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "clientes",
+            "parameter": "limit",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "clientes",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "clientes",
+            "parameter": "limit",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "clientes",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "clientes",
+            "parameter": "limit",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "clientes",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "clientes",
+            "parameter": "limit",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 297,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "wellness.track_employee_engagement",
+            "parameter": "program_types",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "wellness.track_employee_engagement",
+            "parameter": "\"Stress Management Workshops\"], date_range"
+          }
+        ]
+      },
+      {
+        "id": 298,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "customer_interaction.recordFeedback",
+            "parameter": "feedback",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "customer_interaction.recordFeedback",
+            "parameter": "feedback",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 332,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "generate_random_number",
+            "parameter": "min",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "generate_random_number",
+            "parameter": "max",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 339,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Future Election Events by Topic",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 346,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "KeywordExtractor.extractKeywords",
+            "parameter": "extractionMethod",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 372,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "TimeSignatureDetector.detectTimeSignature",
+            "parameter": "rhythmicPattern",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 428,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "HealthAppointments.scheduleAppointment",
+            "parameter": "preferred_times",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 443,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "javaDBFieldModifier.modifyField",
+            "parameter": "fieldProperties",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 453,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "NonBlockingFileReader.readAsync",
+            "parameter": "readOptions",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 461,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "SocialMediaEngagementTracker.trackEngagement",
+            "parameter": "trackingDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "SocialMediaTrendAnalyzer.analyzeTrends",
+            "parameter": "analysisParameters",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 468,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "communication_flow_analysis.evaluate_communication_efficiency",
+            "parameter": "communicationMethods",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 477,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getPhysicalLiteracyLevel",
+            "parameter": "age",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 485,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "public_health.get_disease_statistics",
+            "parameter": "time_period",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "public_health.get_disease_statistics",
+            "parameter": "time_period",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 487,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "ArtifactTimelineGenerator.generateTimeline",
+            "parameter": "eventDetails",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 489,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getPublicityData",
+            "parameter": "campaign_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 499,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "captureVisuals",
+            "parameter": "participants",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 531,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "sendUavCommand",
+            "parameter": "uav_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 557,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "RandomColorSet",
+            "parameter": "count",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 560,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Quotes by Genre Paginated",
+            "parameter": "page_no",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 566,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "multiPeriodCAGR",
+            "parameter": "investments",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 574,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "innovation.manage_projects",
+            "parameter": "projectDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "innovation.manage_projects",
+            "parameter": "projectDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "innovation.manage_projects",
+            "parameter": "projectDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 580,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Motorsport Stage Seasons",
+            "parameter": "uniqueStageId",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Motorsport Stage Seasons",
+            "parameter": "uniqueStageId",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Motorsport Stage Seasons",
+            "parameter": "uniqueStageId",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Motorsport Stage Seasons",
+            "parameter": "uniqueStageId",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 605,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "DataPipelineScheduler.scheduleBatchJob",
+            "parameter": "jobConfig",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "DataPipelineScheduler.scheduleBatchJob",
+            "parameter": "jobConfig",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 624,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Motorsport Team Stage Seasons",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Motorsport Team Stage Seasons",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 628,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "initializeDraggableComponents",
+            "parameter": "componentList",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "initializeDraggableComponents",
+            "parameter": "\"initialPosition\": \"100,200\"}, {\"componentId\": \"widget2\", \"initialPosition\": \"300,400\"}], dragOptions"
+          }
+        ]
+      },
+      {
+        "id": 630,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculate_battery_life",
+            "parameter": "battery_capacity",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_battery_life",
+            "parameter": "power_consumption",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 632,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "EstatePlanning.AssetEvaluation",
+            "parameter": "assets",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 645,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "vintageCollector.evaluateItem",
+            "parameter": "item_details",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "vintageCollector.evaluateItem",
+            "parameter": "item_details",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 654,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get County Zip Codes",
+            "parameter": "countyIds",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get County Zip Codes",
+            "parameter": "countyIds",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 668,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "ThreatAssessment.evaluateNetworkThreats",
+            "parameter": "networkDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 671,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "agile.daily_standup",
+            "parameter": "team_members",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "agile.daily_standup",
+            "parameter": "\"Bob\", \"Carol\"], meeting_time"
+          }
+        ]
+      },
+      {
+        "id": 678,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Length Conversion",
+            "parameter": "number",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 693,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "AirQualityIndexChecker",
+            "parameter": "queryLocations",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 702,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getCommunityDemographics",
+            "parameter": "year",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 717,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getCompositeMaterialProperties",
+            "parameter": "temperature",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 746,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "mealprep.get_recipes",
+            "parameter": "dietary_restrictions",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 751,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Bans by Event ID",
+            "parameter": "event_id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Bans by Event ID",
+            "parameter": "event_id",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 757,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculate_car_fuel_consumption",
+            "parameter": "distance",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_car_fuel_consumption",
+            "parameter": "fuel_used",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 767,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Jwy5EAdINj",
+            "parameter": "hE7nx",
+            "expected": "int",
+            "actual": "float"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Jwy5EAdINj",
+            "parameter": "RTOc",
+            "expected": "int",
+            "actual": "float"
+          }
+        ]
+      },
+      {
+        "id": 782,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "queryTimeZoneByCity",
+            "parameter": "cityDetails",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "fetchTimeZoneByCoordinates",
+            "parameter": "location",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "fetchTimeZoneByCoordinates",
+            "parameter": "location",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 798,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "UrbanDevelopmentPlanner.projectImpactAnalysis",
+            "parameter": "projectDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 811,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "generateAdversarialExample",
+            "parameter": "target_class",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "generateAdversarialExample",
+            "parameter": "epsilon",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 820,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "decryptDataWithAudit",
+            "parameter": "decryptionDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "decryptDataWithAudit",
+            "parameter": "\"encryptedData\": \"UGljbGVvZWZ0Q3lwaGVyRGF0YQ"
+          }
+        ]
+      },
+      {
+        "id": 824,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "evolutionaryAlgorithm",
+            "parameter": "population_size",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "evolutionaryAlgorithm",
+            "parameter": "mutation_rate",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "evolutionaryAlgorithm",
+            "parameter": "max_generations",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 832,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Holiday 100 Songs API",
+            "parameter": "year",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 833,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "EventPlanner.organizeInternationalMeeting",
+            "parameter": "participants",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "EventPlanner.organizeInternationalMeeting",
+            "parameter": "\"country\": \"US\", \"role\": \"CEO\"}, {\"name\": \"Emma Stone\", \"country\": \"UK\", \"role\": \"CTO\"}, {\"name\": \"Hiroshi Tanaka\", \"country\": \"JP\", \"role\": \"CFO\"}], date"
+          }
+        ]
+      },
+      {
+        "id": 861,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get User Information",
+            "parameter": "idusers",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 864,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "ThunderstormPredictor.predictStorm",
+            "parameter": "currentConditions",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "ThunderstormPredictor.predictStorm",
+            "parameter": "\"humidity\": 65.0, \"pressure\": 1012.0}, historicalData"
+          }
+        ]
+      },
+      {
+        "id": 868,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "health.vaccination_schedule",
+            "parameter": "patient_info",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "health.vaccination_schedule",
+            "parameter": "patient_info",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "health.vaccination_schedule",
+            "parameter": "patient_info",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 914,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Story Details",
+            "parameter": "story_id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Story Details",
+            "parameter": "story_id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Story Details",
+            "parameter": "story_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 942,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "homogenizer.optimizePressure",
+            "parameter": "material",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 957,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "ySazOvYztgsuLY.",
+            "parameter": "3ltTcj",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 962,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Ethical_Leadership_Development_Program",
+            "parameter": "program_details",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Corporate_Ethics_Compliance_Auditor",
+            "parameter": "company_info",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 967,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculateSalaryIncrease",
+            "parameter": "percentage_increase",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 975,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "updateSurgeryStatus",
+            "parameter": "surgery_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 994,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "GadgetReleaseTracker.trackRelease",
+            "parameter": "criteria",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1019,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculate_fitness_level",
+            "parameter": "age",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_fitness_level",
+            "parameter": "weight",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_fitness_level",
+            "parameter": "height",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1023,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "DepreciationScheduler.computeStraightLine",
+            "parameter": "assetDetails",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1045,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "film.restore_color_grading",
+            "parameter": "film_details",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "film.restore_color_grading",
+            "parameter": "film_details",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "film.restore_color_grading",
+            "parameter": "film_details",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1050,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Random K-Pop Girl-Group",
+            "parameter": "year",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1122,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "optimize_hvac_operation",
+            "parameter": "temperature_settings",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1136,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "finance.getQuarterlyReport",
+            "parameter": "year",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1150,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "recordTransaction",
+            "parameter": "amount",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1175,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "lighting.adjust_brightness",
+            "parameter": "brightness_level",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1182,
+        "reasons": [
+          {
+            "code": "unknown_parameter",
+            "tool": "generateGraph",
+            "parameter": "responses\\\": [{\\\"question\\\": \\\"Satisfaction\\\", \\\"answer\\\": 7}, {\\\"question\\\": \\\"Usability\\\", \\\"answer\\\": 8}, {\\\"question\\\": \\\"Performance\\\", \\\"answer\\\": 6}]}\", type"
+          }
+        ]
+      },
+      {
+        "id": 1220,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "campaign_effectiveness_tracker",
+            "parameter": "campaigns",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1259,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "BugTracker.submitBugReport",
+            "parameter": "bugDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "BugTracker.submitBugReport",
+            "parameter": "\"description\": \"It happens every time I try to save a new project.\", \"timestamp\": \"2020-06-27 14:23:45\"}, projectIdentifier"
+          }
+        ]
+      },
+      {
+        "id": 1282,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "debounceHandler",
+            "parameter": "wait",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "debounceHandler",
+            "parameter": "options",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1295,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "domChangeLogger",
+            "parameter": "logConfig",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1305,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "SpeciesAdaptabilityEvaluator.evaluateHabitatChange",
+            "parameter": "speciesDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "SpeciesAdaptabilityEvaluator.evaluateHabitatChange",
+            "parameter": "\"biologicalClassification\": {\"family\": \"Canidae\", \"genus\": \"Vulpes\"}}, environmentalChanges"
+          }
+        ]
+      },
+      {
+        "id": 1314,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "game.evaluate_strategy",
+            "parameter": "strategy_details",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "game.evaluate_strategy",
+            "parameter": "strategy_details",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1316,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "get_all_organizations_environment_admin",
+            "parameter": "limit",
+            "expected": "str, optional",
+            "actual": "NoneType"
+          }
+        ]
+      },
+      {
+        "id": 1330,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculate_sum",
+            "parameter": "num1",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_sum",
+            "parameter": "num2",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1331,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "mental_health_program_search",
+            "parameter": "symptoms",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "mental_health_program_search",
+            "parameter": "availability",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "mental_health_program_search",
+            "parameter": "symptoms",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "mental_health_program_search",
+            "parameter": "availability",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1339,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "find_largest_number",
+            "parameter": "numbers",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1344,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculate_gas_mileage",
+            "parameter": "distance",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_gas_mileage",
+            "parameter": "fuel",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1395,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "optimizeProduction",
+            "parameter": "production_lines",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "optimizeProduction",
+            "parameter": "workers",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1423,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "boardgame.design_evaluation",
+            "parameter": "game_details",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "boardgame.design_evaluation",
+            "parameter": "\"theme\": \"naval exploration\", \"mechanics\": [\"resource management\", \"area control\", \"card drafting\"]}, player_feedback"
+          }
+        ]
+      },
+      {
+        "id": 1431,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "artist.biography",
+            "parameter": "artist_id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "artist.biography",
+            "parameter": "artist_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1436,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "oiRtqJp",
+            "parameter": "fhsdUH",
+            "expected": "List[List[int]]",
+            "actual": "list"
+          }
+        ]
+      },
+      {
+        "id": 1443,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "camera_movement_analyzer",
+            "parameter": "scene_details",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1463,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Produce Mixy Words List",
+            "parameter": "amount",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1464,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "waterQualityAnalysis.checkPollutionLevels",
+            "parameter": "sampleDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "waterQualityAnalysis.checkPollutionLevels",
+            "parameter": "sampleDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1471,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "podcast.analytics",
+            "parameter": "date_range",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "podcast.analytics",
+            "parameter": "\"end_date\": \"2024-09-09\"}, metrics"
+          }
+        ]
+      },
+      {
+        "id": 1473,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "get_nearby_events",
+            "parameter": "interests",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1516,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Sport Sections",
+            "parameter": "id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Sport Sections",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Sport Sections",
+            "parameter": "id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Sport Sections",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1521,
+        "reasons": [
+          {
+            "code": "unsupported_type",
+            "tool": "UH6sxHRzKNLwEdB",
+            "parameter": "GABo",
+            "expected": "Callable[[float], float]",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1530,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "patientStatus.update",
+            "parameter": "patientInfo",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "patientStatus.update",
+            "parameter": "patientInfo",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1547,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "culturalIdentity.evaluateCulturalShift",
+            "parameter": "intervals",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1552,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "JavaEventBinder.bindEvents",
+            "parameter": "eventList",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1566,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "chemistry.element_analysis",
+            "parameter": "analysis_parameters",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1577,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "gene.editing_simulation",
+            "parameter": "edits",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "gene.editing_simulation",
+            "parameter": "\"base\": \"G\"}], simulation_time"
+          }
+        ]
+      },
+      {
+        "id": 1595,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Greet",
+            "parameter": "cringeLevel",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Greet",
+            "parameter": "cringeLevel",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Greet",
+            "parameter": "cringeLevel",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Greet",
+            "parameter": "cringeLevel",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1622,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "GuestFeedbackCollector.collectFeedback",
+            "parameter": "feedbackDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1648,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Tennis Team or Player Previous Tournaments",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Tennis Team or Player Previous Tournaments",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Tennis Team or Player Previous Tournaments",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1652,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getMartianWeather",
+            "parameter": "sol",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1664,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "is_a_coordinate_water",
+            "parameter": "longitude",
+            "expected": "int",
+            "actual": "float"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "is_a_coordinate_water",
+            "parameter": "latitude",
+            "expected": "int",
+            "actual": "float"
+          }
+        ]
+      },
+      {
+        "id": 1665,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "DeviceConfigurator.updateFirmwareSchedule",
+            "parameter": "schedule",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1701,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "locate_nearby_places",
+            "parameter": "radius",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1703,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculate_car_loan",
+            "parameter": "car_price",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_car_loan",
+            "parameter": "down_payment",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_car_loan",
+            "parameter": "loan_term",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_car_loan",
+            "parameter": "interest_rate",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1708,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "BasketballLeagueTotalTeamEvents",
+            "parameter": "tournamentId",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "BasketballLeagueTotalTeamEvents",
+            "parameter": "seasonId",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1711,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "music.theory.scale_finder",
+            "parameter": "notes",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1751,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "physics.parallelCapacitanceCalc",
+            "parameter": "capacitance_values",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "physics.parallelCapacitanceCalc",
+            "parameter": "0.33, 2.2], measurement_date"
+          }
+        ]
+      },
+      {
+        "id": 1753,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getFashionBlogDetails",
+            "parameter": "blog_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1756,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "RegulationComplianceChecker.checkCompliance",
+            "parameter": "policyDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "DepositRiskAssessment.performAssessment",
+            "parameter": "deposits",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1759,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "resource_allocation.optimize",
+            "parameter": "resources",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1769,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "factorialComputation",
+            "parameter": "number",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "factorialComputation",
+            "parameter": "detailedSteps",
+            "expected": "boolean",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1782,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "cnc.piercing_method_selection",
+            "parameter": "thickness",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "cnc.piercing_method_selection",
+            "parameter": "cutting_details",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1785,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "wedding_style_fetcher",
+            "parameter": "weather",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "wedding_style_fetcher",
+            "parameter": "weather",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "wedding_style_fetcher",
+            "parameter": "weather",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1795,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "film.restore_color_grading",
+            "parameter": "film_details",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1797,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "search_in_array",
+            "parameter": "array",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "search_in_array",
+            "parameter": "\"banana\", \"carrot\", \"date\", \"eggplant\"], element"
+          }
+        ]
+      },
+      {
+        "id": 1803,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "protein_folding_simulation",
+            "parameter": "protein_data",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "gene_sequence_analysis",
+            "parameter": "sequence_data",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1805,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Anime Wallpapers Related to Wedding by Pagination",
+            "parameter": "sensitivity",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Anime Wallpapers Related to Wedding by Pagination",
+            "parameter": "page",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Anime Wallpapers Related to Wedding by Pagination",
+            "parameter": "quality",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1816,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "retirement.withdrawal_plan",
+            "parameter": "currentAge",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "retirement.withdrawal_plan",
+            "parameter": "retirementSavings",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "retirement.withdrawal_plan",
+            "parameter": "expectedLifespan",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "retirement.withdrawal_plan",
+            "parameter": "annualInflationRate",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "retirement.investment_options",
+            "parameter": "investmentPeriod",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1818,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "remote_project_management_tool",
+            "parameter": "projects",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1819,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "energy.get_consumption",
+            "parameter": "year",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "climate.get_temperature",
+            "parameter": "date_range",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1823,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get All Teas",
+            "parameter": "limit",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1869,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "energy_efficiency.get_wind_turbine_output",
+            "parameter": "wind_speed",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "energy_efficiency.get_wind_turbine_output",
+            "parameter": "wind_speed",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1905,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "mealprep.get_recipes",
+            "parameter": "dietary_restrictions",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1921,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "improv_show_booking",
+            "parameter": "attendees",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1938,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "jupyter.run_cell",
+            "parameter": "cell_index",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1939,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "databaseMaintenance.performMaintenance",
+            "parameter": "maintenanceDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1961,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "respiratory_health.advice",
+            "parameter": "air_quality_index",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "respiratory_health.advice",
+            "parameter": "health_conditions",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1973,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "modifyProcessPriority",
+            "parameter": "process_id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "modifyProcessPriority",
+            "parameter": "priority",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1987,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "finance.predict_market_trends",
+            "parameter": "indicators",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2036,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculateDateDifference",
+            "parameter": "options",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2050,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "random_number_generator",
+            "parameter": "min",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "random_number_generator",
+            "parameter": "max",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2056,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "StockDataFetcher.getHistoricalPrices",
+            "parameter": "dateRange",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "StockDataFetcher.getHistoricalPrices",
+            "parameter": "dateRange",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2059,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "StreamMonitor.monitorStream",
+            "parameter": "monitoringParameters",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2077,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "streamDataIntegration",
+            "parameter": "stream_sources",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2080,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "ProductVisibilityManager.updateVisibilitySchedule",
+            "parameter": "visibilityWindows",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2105,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "fetchDoctrineDetails",
+            "parameter": "texts",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2109,
+        "reasons": [
+          {
+            "code": "unsupported_type",
+            "tool": "7EbejCUGV",
+            "parameter": "LHuh",
+            "expected": "Callable[[float], float]",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2163,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "solarShadowImpact.evaluate",
+            "parameter": "shadowDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "solarShadowImpact.evaluate",
+            "parameter": "shadowDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "solarShadowImpact.evaluate",
+            "parameter": "shadowDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2211,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "_MkFytN4U_7hix",
+            "parameter": "lcxXMX9F",
+            "expected": "int",
+            "actual": "float"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "_MkFytN4U_7hix",
+            "parameter": "IU.5",
+            "expected": "int",
+            "actual": "float"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "_MkFytN4U_7hix",
+            "parameter": "uLquB",
+            "expected": "int",
+            "actual": "float"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "_MkFytN4U_7hix",
+            "parameter": "B2Neah",
+            "expected": "int",
+            "actual": "float"
+          }
+        ]
+      },
+      {
+        "id": 2218,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "material_heat_properties",
+            "parameter": "properties_requested",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2221,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "investmentPortfolioAnalysis",
+            "parameter": "investorDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "investmentPortfolioAnalysis",
+            "parameter": "\"contactInfo\": {\"email\": \"johndoe@example.com\"}}, properties"
+          }
+        ]
+      },
+      {
+        "id": 2225,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "ExperimentScheduler.scheduleSessions",
+            "parameter": "sessionDetails",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2238,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "public_speaking_assessment",
+            "parameter": "techniques",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2242,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "NutritionAnalyzer.analyzeRecipe",
+            "parameter": "recipe",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2246,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "artStudio.createCanvas",
+            "parameter": "canvasSettings",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "artStudio.createCanvas",
+            "parameter": "canvasSettings",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "artStudio.createCanvas",
+            "parameter": "canvasSettings",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2253,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "LibraryBookLocator.findBookLocations",
+            "parameter": "includeBranches",
+            "expected": "boolean",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2263,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getArtifactClassification",
+            "parameter": "artifact_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2274,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "jsAstModifier",
+            "parameter": "modificationRules",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2276,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "FootballStats.getMatchDetails",
+            "parameter": "includeEvents",
+            "expected": "boolean",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2277,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "DynamicScaleVisualizer",
+            "parameter": "scaleOptions",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2300,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "DeFiLiquidityTracker.trackPoolChanges",
+            "parameter": "poolIdentifiers",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2312,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "QFiPG0l",
+            "parameter": "SCRxo_",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2340,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "classic_film_screening_schedule",
+            "parameter": "film_details",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2341,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getAircraftPosition",
+            "parameter": "altitude",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getAircraftPosition",
+            "parameter": "velocity",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2362,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "smart_home_temperature_control",
+            "parameter": "zones",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "smart_home_temperature_control",
+            "parameter": "\"desired_temperature\": 22.0}, {\"zone_id\": \"bedroom\", \"desired_temperature\": 20.0}, {\"zone_id\": \"kitchen\", \"desired_temperature\": 21.0}], weather"
+          }
+        ]
+      },
+      {
+        "id": 2368,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "weather.fetchDetailedForecast",
+            "parameter": "dateRange",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "weather.fetchDetailedForecast",
+            "parameter": "\"end_date\": \"2023/04/06 23:59\"}, forecastDetails"
+          }
+        ]
+      },
+      {
+        "id": 2374,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "camping.get_water_sources",
+            "parameter": "filters",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "camping.hygiene_practices",
+            "parameter": "environment",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2381,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "commerce.subscribe",
+            "parameter": "subscription",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "commerce.subscribe",
+            "parameter": "subscription",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "commerce.subscribe",
+            "parameter": "subscription",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2389,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "nanomedicine.get_treatment_plan",
+            "parameter": "patient_info",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2399,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "get_currency_conversion",
+            "parameter": "amount",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "get_currency_conversion",
+            "parameter": "amount",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2416,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "trackPracticeSessions",
+            "parameter": "sessionRecords",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2423,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "generate_workout_plan",
+            "parameter": "user_profile",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "generate_workout_plan",
+            "parameter": "user_profile",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2440,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "competitorAnalysis.fetch",
+            "parameter": "competitorNames",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "competitorAnalysis.fetch",
+            "parameter": "\"BetaSolutions\", \"GammaCorp\"], reportDate"
+          }
+        ]
+      },
+      {
+        "id": 2467,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "reviewAnalytics.extractSentiment",
+            "parameter": "reviews",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2505,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "generatePassword",
+            "parameter": "length",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2513,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "policy_analysis.generate_report",
+            "parameter": "economicIndicators",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "policy_analysis.generate_report",
+            "parameter": "\"inflation rate\"], timePeriod"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "legislation_tracking.track_progress",
+            "parameter": "stages",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2556,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Search Icons",
+            "parameter": "size",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Search Icons",
+            "parameter": "limit",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2619,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "maya.render_scene",
+            "parameter": "render_settings",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2634,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getLayerAttribute",
+            "parameter": "feature_id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getLayerAttribute",
+            "parameter": "feature_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2635,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Ldubh9kQqGZHB",
+            "parameter": "bavDx6",
+            "expected": "str, optional",
+            "actual": "NoneType"
+          }
+        ]
+      },
+      {
+        "id": 2646,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "audacity.edit_audio",
+            "parameter": "edit_actions",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2668,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "PoeticMeterIdentifier.identifyMeter",
+            "parameter": "verseLines",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "PoeticMeterIdentifier.identifyMeter",
+            "parameter": "\"His house is in the village, though.\"], detailedAnalysis"
+          }
+        ]
+      },
+      {
+        "id": 2726,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "GenotypeFrequencyCalculator.calculateAlleleFrequency",
+            "parameter": "populationData",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "GenotypeFrequencyCalculator.calculateAlleleFrequency",
+            "parameter": "\"count\": 40}, {\"allele\": \"T\", \"count\": 60}, {\"allele\": \"C\", \"count\": 20}], sampleDate"
+          }
+        ]
+      },
+      {
+        "id": 2732,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Heart_Healthy_Food_Recommender",
+            "parameter": "user_health_condition",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "Heart_Healthy_Food_Recommender",
+            "parameter": "\"cholesterol_level\": \"Borderline high\", \"blood_sugar_level\": \"Prediabetes\"}, dietary_preferences"
+          }
+        ]
+      },
+      {
+        "id": 2735,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getChildHealthStatus",
+            "parameter": "child_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2741,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "vr_healthcare.patient_monitoring.get",
+            "parameter": "monitoring_parameters",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "vr_healthcare.patient_monitoring.get",
+            "parameter": "\"heart rate\"], time_range"
+          }
+        ]
+      },
+      {
+        "id": 2752,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get TV Shows On Air",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get TV Shows On Air",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2767,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "SupplierCompliance.verifyCompliance",
+            "parameter": "supplierDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "SupplierCompliance.verifyCompliance",
+            "parameter": "supplierDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2830,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "health.bone_density_analysis",
+            "parameter": "patient_info",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2840,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculateRailwayTrackCapacity",
+            "parameter": "track_length",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculateRailwayTrackCapacity",
+            "parameter": "train_length",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculateRailwayTrackCapacity",
+            "parameter": "headway_time",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2851,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculate_discount_amount",
+            "parameter": "price",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_discount_amount",
+            "parameter": "discount_percentage",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2859,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "MovieDetailsQuery",
+            "parameter": "movieTitles",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "MovieDetailsQuery",
+            "parameter": "\"Interstellar\", \"The Dark Knight\"], language"
+          }
+        ]
+      },
+      {
+        "id": 2876,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "thermostat.set_temperature",
+            "parameter": "temperature",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2900,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getTradeData",
+            "parameter": "year",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2901,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "TeamStandingsSeasons",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "TeamStandingsSeasons",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2910,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "SleepTracker.analyzeSleepPatterns",
+            "parameter": "sleepData",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2921,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "stockData.fetch",
+            "parameter": "dataFields",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2922,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Hebrew Calendar Components",
+            "parameter": "month",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Hebrew Calendar Components",
+            "parameter": "year",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2925,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get User Trading Histories",
+            "parameter": "per_page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get User Trading Histories",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2931,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getVoterTurnout",
+            "parameter": "election_year",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getVoterTurnout",
+            "parameter": "election_year",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getVoterTurnout",
+            "parameter": "election_year",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2947,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "financialNews.aggregateNews",
+            "parameter": "keywords",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "financialNews.aggregateNews",
+            "parameter": "\"IPO\"], newsPeriod"
+          }
+        ]
+      },
+      {
+        "id": 2953,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculateInterest",
+            "parameter": "principal",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculateInterest",
+            "parameter": "interest_rate",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculateInterest",
+            "parameter": "time",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2957,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "podcast.marketing_campaign",
+            "parameter": "campaign_details",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2970,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Is Prime",
+            "parameter": "number",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2992,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "parasitology.environmental_impact",
+            "parameter": "environmentalFactors",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "parasitology.identify_parasite",
+            "parameter": "sampleData",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "parasitology.identify_parasite",
+            "parameter": "\"collectionDate\": \"2023-06-01\"}, environment"
+          }
+        ]
+      },
+      {
+        "id": 3001,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getRiskScore",
+            "parameter": "customer_age",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getRiskScore",
+            "parameter": "previous_claims",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3004,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Goal Analysis: Scoring First in Between",
+            "parameter": "matchId",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Goal Analysis: Scoring First in Between",
+            "parameter": "matchId",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3044,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "GetRecentAnimes",
+            "parameter": "pageNumber",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3053,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "EcosystemHealth.evaluateTrends",
+            "parameter": "timeRange",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3072,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "LegalCaseAnalyzer.analyzeCriminalCase",
+            "parameter": "caseDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "CriminalRecordSearch.searchByParameters",
+            "parameter": "searchParameters",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3075,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "cinematography.colorBalanceAdjustment",
+            "parameter": "adjustments",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "cinematography.applyLUT",
+            "parameter": "lut_details",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3109,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "convertUnits",
+            "parameter": "value",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3114,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "dynamicShortcutLoader",
+            "parameter": "config",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3148,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "attachClickHandler",
+            "parameter": "callback",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3151,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "food_security.analysis",
+            "parameter": "community_data",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3154,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Q_oXZSOo",
+            "parameter": "AAncqdE",
+            "expected": "int",
+            "actual": "float"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Q_oXZSOo",
+            "parameter": "m6Zea.",
+            "expected": "int",
+            "actual": "float"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Q_oXZSOo",
+            "parameter": "AAncqdE",
+            "expected": "int",
+            "actual": "float"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Q_oXZSOo",
+            "parameter": "m6Zea.",
+            "expected": "int",
+            "actual": "float"
+          }
+        ]
+      },
+      {
+        "id": 3165,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "epidemiology.population_risk_factors",
+            "parameter": "risk_factors",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "epidemiology.population_risk_factors",
+            "parameter": "risk_factors",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3186,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "BodyCompositionAnalyzer.calculateBMI",
+            "parameter": "weight",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "BodyCompositionAnalyzer.calculateBMI",
+            "parameter": "height",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "BodyCompositionAnalyzer.calculateBodyFatPercentage",
+            "parameter": "weight",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "BodyCompositionAnalyzer.calculateBodyFatPercentage",
+            "parameter": "height",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "BodyCompositionAnalyzer.calculateBodyFatPercentage",
+            "parameter": "age",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3194,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getStatsbyYear",
+            "parameter": "year",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3213,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "integralSolver",
+            "parameter": "functionDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "integralSolver",
+            "parameter": "functionDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "integralSolver",
+            "parameter": "functionDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3220,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "generate_quiz",
+            "parameter": "number_of_questions",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3228,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Verify Signup Code",
+            "parameter": "code",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3254,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculateSludgeProduction",
+            "parameter": "flow_rate",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculateSludgeProduction",
+            "parameter": "influent_suspended_solids",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3255,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "customerAnalytics.predictChurn",
+            "parameter": "activity_period",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "customerAnalytics.predictChurn",
+            "parameter": "\"end_date\": \"2020-11-03\"}, interaction_types"
+          }
+        ]
+      },
+      {
+        "id": 3262,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getMetabolismRate",
+            "parameter": "temperature",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3274,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "ModifyJpeg",
+            "parameter": "quality",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "ModifyJpeg",
+            "parameter": "quality",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3278,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "quantum_algorithm.simulate",
+            "parameter": "qubits",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3303,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "3ERIs04",
+            "parameter": "jDWq4",
+            "expected": "int",
+            "actual": "float"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "3ERIs04",
+            "parameter": "vzUFc055I",
+            "expected": "int",
+            "actual": "float"
+          }
+        ]
+      },
+      {
+        "id": 3310,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "centrifuge.maintenance_schedule",
+            "parameter": "usage_history",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "centrifuge.maintenance_schedule",
+            "parameter": "usage_history",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3312,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "determine_projectile_trajectory",
+            "parameter": "launch_parameters",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3326,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "mixer.schedule_speed_adjustment",
+            "parameter": "speed",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "mixer.schedule_speed_adjustment",
+            "parameter": "schedule",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3337,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "RewardPrograms.getCardRewards",
+            "parameter": "cardDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "RewardPrograms.getCardRewards",
+            "parameter": "\"expiryDate\": \"12/27\"}, spendingHabits"
+          }
+        ]
+      },
+      {
+        "id": 3340,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "parkDetailsFetcher.getNationalParkInfo",
+            "parameter": "details",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "parkDetailsFetcher.getNationalParkInfo",
+            "parameter": "{\"infoType\": \"facilities\"}], date"
+          }
+        ]
+      },
+      {
+        "id": 3345,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getFoodSecurityData",
+            "parameter": "year",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getFoodSecurityData",
+            "parameter": "year",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3349,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "advancedCircleMetrics",
+            "parameter": "circleData",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3363,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "artPopularityTracker.trackEvent",
+            "parameter": "eventDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3413,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "martial_arts.find_styles",
+            "parameter": "time_period",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3424,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "GeneticSampleAnalyzer.analyzeDiversity",
+            "parameter": "markers",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "GeneticSampleAnalyzer.analyzeDiversity",
+            "parameter": "\"D-loop\"], timePeriod"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "GeneticSampleAnalyzer.analyzeDiversity",
+            "parameter": "sampleDetails",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3430,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "sendGift",
+            "parameter": "gift_id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "sendGift",
+            "parameter": "friend_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3455,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "fashionStyling.scheduleStylingSession",
+            "parameter": "sessionDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3457,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getInteriorDesign",
+            "parameter": "budget",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3459,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "testMobileApp",
+            "parameter": "test_cases",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "testMobileApp",
+            "parameter": "automated_testing",
+            "expected": "boolean",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "testMobileApp",
+            "parameter": "test_cases",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "testMobileApp",
+            "parameter": "automated_testing",
+            "expected": "boolean",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3470,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "granulator.set_particle_size",
+            "parameter": "target_size",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "granulator.set_particle_size",
+            "parameter": "\"max_size\": 5}, operation_time"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "granulator.get_material_flow",
+            "parameter": "time_period",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3481,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "voltageDropCalculator.computeDrop",
+            "parameter": "wireDetails",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "voltageDropCalculator.computeDrop",
+            "parameter": "\"length\": 50.0, \"current\": 20.0}, temperature"
+          }
+        ]
+      },
+      {
+        "id": 3507,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "add_two_numbers",
+            "parameter": "num1",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "add_two_numbers",
+            "parameter": "num2",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3532,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "leadership.teamDynamicsEvaluation",
+            "parameter": "teamInfo",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3554,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "ClimateEducator.allocateResources",
+            "parameter": "resourceAllocation",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3584,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "BankPerformanceAnalysis.retrieveQuarterlyReport",
+            "parameter": "bankDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3591,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculate_car_loan",
+            "parameter": "car_price",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_car_loan",
+            "parameter": "down_payment",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_car_loan",
+            "parameter": "loan_term",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_car_loan",
+            "parameter": "interest_rate",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3642,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Latest Earthquake Near Me",
+            "parameter": "latitude",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Latest Earthquake Near Me",
+            "parameter": "longitude",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3647,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "RetirementPlanner.calculateWithdrawalAmount",
+            "parameter": "age",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "RetirementPlanner.calculateWithdrawalAmount",
+            "parameter": "retirementPlan",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3652,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculateRiskAppetite",
+            "parameter": "age",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculateRiskAppetite",
+            "parameter": "income",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3654,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Rugby Manager Last Matches",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Rugby Manager Last Matches",
+            "parameter": "page",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Rugby Manager Last Matches",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Rugby Manager Last Matches",
+            "parameter": "page",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Rugby Manager Last Matches",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Rugby Manager Last Matches",
+            "parameter": "page",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3657,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getAgroclimatologyData",
+            "parameter": "year",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3658,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getPsychosomaticSymptoms",
+            "parameter": "age",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3663,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Messages",
+            "parameter": "limit",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3667,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "communication.schedule_meeting",
+            "parameter": "participants",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3681,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "scaleInstance",
+            "parameter": "capacity",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "scaleInstance",
+            "parameter": "autoscaling",
+            "expected": "boolean",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "scaleInstance",
+            "parameter": "min_instances",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "scaleInstance",
+            "parameter": "max_instances",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3685,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "F1 Championship Statistics",
+            "parameter": "year",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3687,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getUavStatus",
+            "parameter": "uav_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3736,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "seo_strategy_analysis_tool",
+            "parameter": "website_profiles",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3737,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "psychology.stressAssessment",
+            "parameter": "environmentalFactors",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "psychology.stressAssessment",
+            "parameter": "\"intensity\": \"high\"}, {\"factor\": \"noisy environment\", \"intensity\": \"moderate\"}, {\"factor\": \"long working hours\", \"intensity\": \"high\"}], assessmentPeriod"
+          }
+        ]
+      },
+      {
+        "id": 3748,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "legal.caseSummary",
+            "parameter": "includeParties",
+            "expected": "boolean",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "legal.caseSummary",
+            "parameter": "includeParties",
+            "expected": "boolean",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3791,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getRobotPosition",
+            "parameter": "robot_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3792,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "get_recipes_by_ingredients",
+            "parameter": "ingredients",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "get_recipes_by_ingredients",
+            "parameter": "\"broccoli\", \"rice\"], max_prep_time"
+          }
+        ]
+      },
+      {
+        "id": 3812,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "task_manager.create_task",
+            "parameter": "task_details",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3839,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Cinema4D.AnimateScene",
+            "parameter": "animationSettings",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Cinema4D.AnimateScene",
+            "parameter": "animationSettings",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3846,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "get_taxi_fares",
+            "parameter": "arr_lat",
+            "expected": "int",
+            "actual": "float"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "get_taxi_fares",
+            "parameter": "arr_lng",
+            "expected": "int",
+            "actual": "float"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "get_taxi_fares",
+            "parameter": "dep_lat",
+            "expected": "int",
+            "actual": "float"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "get_taxi_fares",
+            "parameter": "dep_lng",
+            "expected": "int",
+            "actual": "float"
+          }
+        ]
+      },
+      {
+        "id": 3885,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getDraftProspects",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getDraftProspects",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getConference",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3897,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "generateFinancialReport",
+            "parameter": "details",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      }
+    ],
+    "val": [
+      {
+        "id": 23,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "generate_comedy_sketch",
+            "parameter": "themes",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "generate_comedy_sketch",
+            "parameter": "\"miscommunication\"], characters"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "comedy_timing_analyzer",
+            "parameter": "performance",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 240,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Graph Points",
+            "parameter": "event_id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Motorsport Team Image",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Matches by Tournament and Player",
+            "parameter": "tournament_id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Matches by Tournament and Player",
+            "parameter": "player_id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Fixtures By Team",
+            "parameter": "team_id",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 378,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "fetchWeatherForecast",
+            "parameter": "dateRange",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 386,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getHardwareInfo",
+            "parameter": "year_of_manufacture",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 724,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "checkEMCRadiation",
+            "parameter": "frequency",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "checkEMCRadiation",
+            "parameter": "distance",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 965,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Goal Analysis: Goal Minutes in Between",
+            "parameter": "matchId",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1033,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "gameLocalization.translationTimeline",
+            "parameter": "languages",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "gameLocalization.translationTimeline",
+            "parameter": "\"French\", \"German\", \"Japanese\"], timeline"
+          }
+        ]
+      },
+      {
+        "id": 1056,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "add_to_cart",
+            "parameter": "quantity",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1152,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "urbanExploration.findCafes",
+            "parameter": "atmosphere",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "urbanExploration.findCafes",
+            "parameter": "amenities",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "urbanExploration.findCafes",
+            "parameter": "\"pet friendly\"], openingHours"
+          }
+        ]
+      },
+      {
+        "id": 1229,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "LCPJ0",
+            "parameter": "unbEov",
+            "expected": "bool, optional",
+            "actual": "float"
+          }
+        ]
+      },
+      {
+        "id": 1290,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "GetTvChannelDetailsForMatch",
+            "parameter": "matchId",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "GetTvChannelDetailsForMatch",
+            "parameter": "channelId",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Rugby Match Statistics",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Motorsport Stages",
+            "parameter": "id",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1322,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "pollutionForecast.predict",
+            "parameter": "historicalData",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1420,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "water_access.evaluate_sources",
+            "parameter": "evaluation_criteria",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1472,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Top Players for a Tournament",
+            "parameter": "seasonId",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Top Players for a Tournament",
+            "parameter": "tournamentId",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1480,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "gameLocalization.textValidation",
+            "parameter": "text_entries",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "gameLocalization.textValidation",
+            "parameter": "text_entries",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1559,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Novel Pages",
+            "parameter": "novel_id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Novel Pages",
+            "parameter": "novel_id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Novel Pages",
+            "parameter": "novel_id",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Novel Pages",
+            "parameter": "novel_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1766,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getVehicleAcceleration",
+            "parameter": "time_interval",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getSuspensionResponse",
+            "parameter": "speed",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1840,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "isPerfectSquare",
+            "parameter": "number",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1953,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "silo.damage_assessment",
+            "parameter": "inspection_report",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2134,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getBlock",
+            "parameter": "block_number",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2223,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "oralhealth.dental_product_recommendation",
+            "parameter": "sensitivity",
+            "expected": "boolean",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "oralhealth.dental_product_recommendation",
+            "parameter": "budget",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "oralhealth.dental_product_recommendation",
+            "parameter": "sensitivity",
+            "expected": "boolean",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "oralhealth.dental_product_recommendation",
+            "parameter": "budget",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2523,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "education.chartProgress",
+            "parameter": "studentData",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2569,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "intrusionDetector.initialize",
+            "parameter": "config",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2914,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "competition_schedule_fetcher",
+            "parameter": "date_range",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "competition_schedule_fetcher",
+            "parameter": "\"end_date\": \"2020-10-20\"}, location"
+          }
+        ]
+      },
+      {
+        "id": 3000,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "TradeAnalysis.getMarketTrends",
+            "parameter": "tradeData",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3369,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Fasting Types",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Fasting Types",
+            "parameter": "limit",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3378,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "proxemics.event_seating",
+            "parameter": "attendees",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      }
+    ],
+    "test": [
+      {
+        "id": 14,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "checkShippingCost",
+            "parameter": "product_weight",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 80,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "TreeEquivalent",
+            "parameter": "weight",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 232,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "LegalDocumentAnalyzer.extractRelevantLaws",
+            "parameter": "analysisParameters",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "LegalDocumentAnalyzer.extractRelevantLaws",
+            "parameter": "analysisParameters",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 257,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "responsiveMetaTagInjector",
+            "parameter": "viewportSettings",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 285,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "fashion_get_outfit_suggestions",
+            "parameter": "schedule",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "fashion_get_styling_tips",
+            "parameter": "user_preferences",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 350,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "medicine.internal_medicine.patient_diagnosis",
+            "parameter": "symptoms",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "medicine.internal_medicine.patient_diagnosis",
+            "parameter": "\"nausea\"], medicalHistory"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "medicine.internal_medicine.patient_diagnosis",
+            "parameter": "\"treatment\": \"Amlodipine (5mg per day)\", \"duration\": \"5 years\"}], labResults"
+          }
+        ]
+      },
+      {
+        "id": 400,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "retirement.annuityEstimator",
+            "parameter": "principal",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "retirement.annuityEstimator",
+            "parameter": "retirementDetails",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 527,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "topAssistsBySeason",
+            "parameter": "season",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 575,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "nationalParkActivities.listActivities",
+            "parameter": "includeGuides",
+            "expected": "boolean",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "nationalParkActivities.listActivities",
+            "parameter": "includeGuides",
+            "expected": "boolean",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 578,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Team Players",
+            "parameter": "team_id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Team Players",
+            "parameter": "team_id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Team Players",
+            "parameter": "team_id",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Team Players",
+            "parameter": "team_id",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 626,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "v1_reversegeocoding",
+            "parameter": "lon",
+            "expected": "int",
+            "actual": "float"
+          }
+        ]
+      },
+      {
+        "id": 971,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "advancedMath.powerSeries",
+            "parameter": "calculations",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1004,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "neuroimaging.analyze_brain_scans",
+            "parameter": "scanData",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1158,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getInvestmentBankingData",
+            "parameter": "year",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1180,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "estimate_car_value",
+            "parameter": "car_details",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1288,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "diy.project_planner",
+            "parameter": "time_frame",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1360,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "AssetReallocationRecommender",
+            "parameter": "portfolio_analysis",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1372,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "shredder.maintenance_schedule",
+            "parameter": "shredders",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "shredder.capacity_analysis",
+            "parameter": "material_types",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1568,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "iot_network_traffic_monitor",
+            "parameter": "devices",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1811,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "jsConfigValueDeterminer",
+            "parameter": "configParams",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "jsTimeConfigDeterminer",
+            "parameter": "timeConfigParams",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 1924,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getLabResults",
+            "parameter": "patient_id",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2011,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculate_distance",
+            "parameter": "lat1",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_distance",
+            "parameter": "lon1",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_distance",
+            "parameter": "lat2",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_distance",
+            "parameter": "lon2",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2149,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getSoloTravelTips",
+            "parameter": "budget",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2375,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "triangle.calculate_area",
+            "parameter": "base",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "triangle.calculate_area",
+            "parameter": "height",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "square.calculate_area",
+            "parameter": "side",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "parallelogram.calculate_perimeter",
+            "parameter": "base",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "parallelogram.calculate_perimeter",
+            "parameter": "side",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2471,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "cross_validation.k_fold",
+            "parameter": "k",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2473,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "film.analyze_movement_impact",
+            "parameter": "aspects",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "film.analyze_movement_impact",
+            "parameter": "aspects",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2482,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "check_movie_reviews",
+            "parameter": "critic_reviews",
+            "expected": "boolean",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "check_movie_reviews",
+            "parameter": "user_reviews",
+            "expected": "boolean",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2492,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculate_loan_interest",
+            "parameter": "loan_amount",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_loan_interest",
+            "parameter": "interest_rate",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate_loan_interest",
+            "parameter": "loan_term",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2510,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "game_library.fetch",
+            "parameter": "releasePeriod",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2515,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "rotateImage",
+            "parameter": "angle",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2625,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "videoLocation.findScenicSpots",
+            "parameter": "environment",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "videoLocation.findScenicSpots",
+            "parameter": "\"weather_conditions\": [\"snowy\"]}, time_of_day"
+          }
+        ]
+      },
+      {
+        "id": 2728,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "getAllWebhooks",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getAllWebhooks",
+            "parameter": "size",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getAllWebhooks",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "getAllWebhooks",
+            "parameter": "size",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2813,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Subcategories",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Subcategories",
+            "parameter": "limit",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Subcategories",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Subcategories",
+            "parameter": "limit",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Subcategories",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Subcategories",
+            "parameter": "limit",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Subcategories",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get Subcategories",
+            "parameter": "limit",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2972,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "audioEnhancer.applyFilters",
+            "parameter": "filters",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3301,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "calculate BMI",
+            "parameter": "weight",
+            "expected": "float",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "calculate BMI",
+            "parameter": "height",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3557,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "workrelationships.conflict_prevention",
+            "parameter": "teamDynamics",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "workrelationships.conflict_prevention",
+            "parameter": "\"flat hierarchy\"], communicationStyle"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "workrelationships.conflict_resolution",
+            "parameter": "partiesInvolved",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "workrelationships.conflict_resolution",
+            "parameter": "\"Bob\"], desiredOutcome"
+          }
+        ]
+      },
+      {
+        "id": 3712,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "compare_cruise_dining_specials",
+            "parameter": "cruise_ship_ids",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3715,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "circleAreaCalculator",
+            "parameter": "circles",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3801,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "secureKeyManager.createSymmetricKey",
+            "parameter": "keyLength",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 3815,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "cgi.modeling.create",
+            "parameter": "dimensions",
+            "expected": "array",
+            "actual": "str"
+          },
+          {
+            "code": "unknown_parameter",
+            "tool": "cgi.modeling.create",
+            "parameter": "2.0, 2.0], texture"
+          }
+        ]
+      },
+      {
+        "id": 3820,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "GetFoodRecipe",
+            "parameter": "ingredients",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      }
+    ],
+    "official": [
+      {
+        "id": 0,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "GetNews",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Verify Email",
+            "parameter": "checkSMTP",
+            "expected": "boolean",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get Team Stats Filters",
+            "parameter": "teamId",
+            "expected": "float",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "min_meeting_rooms",
+            "parameter": "intervals",
+            "expected": "List[List[int]]",
+            "actual": "list"
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "forum.user_engagement_tracker",
+            "parameter": "date_range",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "familyEducation.scheduleTutoring",
+            "parameter": "sessionDetails",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "analyze_movie_reviews",
+            "parameter": "reviews",
+            "expected": "array",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 44,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "book.recommendation.genre_based",
+            "parameter": "preferences",
+            "expected": "dict",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "book.recommendation.genre_based",
+            "parameter": "preferences",
+            "expected": "dict",
+            "actual": "str"
+          }
+        ]
+      },
+      {
+        "id": 49,
+        "reasons": [
+          {
+            "code": "type_conflict",
+            "tool": "Get All UFC Fighters",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get All UFC Fighters",
+            "parameter": "per_page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get All UFC Fighters",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get All UFC Fighters",
+            "parameter": "per_page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get All UFC Fighters",
+            "parameter": "page",
+            "expected": "int",
+            "actual": "str"
+          },
+          {
+            "code": "type_conflict",
+            "tool": "Get All UFC Fighters",
+            "parameter": "per_page",
+            "expected": "int",
+            "actual": "str"
+          }
+        ]
+      }
+    ]
+  },
+  "strata": {
+    "train": {
+      "single": 538,
+      "multi": 435
+    },
+    "val": {
+      "single": 41,
+      "multi": 52
+    },
+    "test": {
+      "single": 76,
+      "multi": 83
+    },
+    "official": {
+      "single": 13,
+      "multi": 19
+    }
+  }
+}

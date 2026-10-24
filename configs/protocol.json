@@ -1,0 +1,29 @@
+{
+  "version": "ready-v3",
+  "model": "models/Qwen2.5-0.5B-Instruct",
+  "manifest": "docs/prospective_manifest_v3.json",
+  "manifest_sha256": "1c6837fc234d529856f91e152bd98786bd634de1b7a5b8d947a1762631950de4",
+  "source_dir": "data/ToolRL/dataset/rlla_4k",
+  "max_length": 960,
+  "completion_cap": 160,
+  "eval_batch_size": 4,
+  "exposures": 200,
+  "sft_lr": 0.0001,
+  "rl_lr": 1e-05,
+  "temperature": 0.8,
+  "top_p": 0.95,
+  "group_size": 4,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "beta": 0.0,
+  "loss_type": "grpo",
+  "scale_rewards": "group",
+  "mask_truncated_completions": false,
+  "weight_decay": 0.0,
+  "warmup_steps": 0,
+  "gradient_checkpointing": true,
+  "torch_empty_cache_steps": 1
+}

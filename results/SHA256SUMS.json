@@ -1,0 +1,12 @@
+{
+  "call_count_stratified.csv": "5cec4d0ab8d3be307f0b9af500b439569972dbaf128d8f24f8ae9638115fa53e",
+  "contrasts.json": "e4513187bb8df80b01caf7765e84f2e2c419b39399f520268db0d696d96253dd",
+  "mechanism_details.json": "9f4a10c8d34f750a3ce40fb7b8f92226a0b2b738be7457f196f94480e6133db1",
+  "per_prediction.csv": "662c2bb66b1ad9d0bb9ed4ab5276dba0663a9b2bc63e26fc646cf644f716a30f",
+  "per_seed.csv": "b448cee83e18aa1509df6eda14e843b84383b256a901f4194bbfc9654e0e1ff3",
+  "rescore_verified.json": "9d030d7d7ca50a3da73366b55cffda12cfaf2e3ca04c904ac33e7638733188a4",
+  "seed_summary.json": "41d684d63bb95b95d1b2f802fd866e9bd5fce6ca3f56b10ad141d3fe2d21383b",
+  "subgroups.csv": "c33cecea39ba52bf2db7888d88b2f6bb83481a1e356ea5c45232e2eeab0d79fe",
+  "summary.json": "b35861dae9db9aa00d620ad1ac16b710eea3f351da505afc29c7e1ae9159dd48",
+  "validation_test_gap_audit.json": "a9ea559d9753e6c81b2f7c1ef7745b350ccc2f20d3427827e06cda0cd59def1e"
+}

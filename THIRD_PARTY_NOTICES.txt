@@ -1,0 +1,14 @@
+This project adapts the reward decomposition / matching idea of ToolRL.
+Upstream: https://github.com/qiancheng0/ToolRL
+Paper: ToolRL: Reward is All Tool Learning Needs (https://arxiv.org/abs/2504.13958)
+Inspected commit: 8cee13ec0ca72f0461da372a93a6fd8140dbb840
+Upstream reward copyright: Copyright 2024 ByteDance Ltd. and/or its affiliates.
+Upstream license: Apache License 2.0, reproduced in LICENSE.ToolRL.txt.
+
+rewards_train.py is a local adaptation with typed equality, strict unique-block
+parsing, multiset matching, and optimal unordered parameter assignment. It is
+not the unmodified upstream reward and does not reproduce the original paper.
+The original reward is only loaded read-only for audit tests.
+The datasets and model remain at their existing local paths; publication must
+retain their respective original licenses and attribution. Do not redistribute
+the full local environment or model weights as part of the project repository.

@@ -1,0 +1,8 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.png binary
+# Original bytes are part of the frozen protocol, including CRLF.
+docs/prospective_manifest*.json -text whitespace=cr-at-eol

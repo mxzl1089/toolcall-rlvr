@@ -1,0 +1,354 @@
+{
+  "mechanism": {
+    "test_results": {
+      "identity_42": {
+        "n": 159,
+        "tool": 112,
+        "keys": 89,
+        "strict": 68,
+        "error_missing_parameter": 21,
+        "error_wrong_value": 31,
+        "error_extra_parameter": 17,
+        "error_duplicate_json_key": 2,
+        "error_truncated_tool_call": 1,
+        "error_wrong_value_type": 6,
+        "error_missing_call": 13,
+        "error_wrong_tool_multiset": 40,
+        "error_invalid_json": 4,
+        "error_extra_call": 10,
+        "transition": {
+          "0->0": 90,
+          "1->1": 63,
+          "0->1": 5,
+          "1->0": 1
+        },
+        "training_seconds": 1956.3372357999997,
+        "peak_allocated_mib": 1428.0,
+        "min_available_host_ram_gib": 3.488079071044922,
+        "max_sampled_device_used_mib": 1676
+      },
+      "identity_43": {
+        "n": 159,
+        "tool": 111,
+        "keys": 85,
+        "strict": 67,
+        "error_missing_parameter": 26,
+        "error_wrong_value": 27,
+        "error_extra_parameter": 13,
+        "error_invalid_json": 7,
+        "error_duplicate_json_key": 2,
+        "error_truncated_tool_call": 4,
+        "error_wrong_value_type": 6,
+        "error_missing_call": 14,
+        "error_wrong_tool_multiset": 34,
+        "error_extra_call": 8,
+        "error_invalid_tool_call_count": 1,
+        "transition": {
+          "0->0": 91,
+          "1->1": 63,
+          "1->0": 1,
+          "0->1": 4
+        },
+        "training_seconds": 1986.9663531000006,
+        "peak_allocated_mib": 1421.9375,
+        "min_available_host_ram_gib": 3.7000083923339844,
+        "max_sampled_device_used_mib": 1610
+      },
+      "identity_44": {
+        "n": 159,
+        "tool": 116,
+        "keys": 91,
+        "strict": 70,
+        "error_invalid_tool_call_count": 1,
+        "error_wrong_value": 29,
+        "error_extra_parameter": 15,
+        "error_duplicate_json_key": 2,
+        "error_missing_parameter": 22,
+        "error_wrong_tool_multiset": 32,
+        "error_wrong_value_type": 6,
+        "error_missing_call": 14,
+        "error_truncated_tool_call": 3,
+        "error_extra_call": 7,
+        "error_invalid_json": 5,
+        "transition": {
+          "0->0": 88,
+          "1->1": 63,
+          "0->1": 7,
+          "1->0": 1
+        },
+        "training_seconds": 2066.0851844999997,
+        "peak_allocated_mib": 1427.0205078125,
+        "min_available_host_ram_gib": 1.9866523742675781,
+        "max_sampled_device_used_mib": 1654
+      },
+      "gate_42": {
+        "n": 159,
+        "tool": 112,
+        "keys": 87,
+        "strict": 66,
+        "error_missing_parameter": 22,
+        "error_wrong_value": 33,
+        "error_extra_parameter": 18,
+        "error_invalid_json": 5,
+        "error_duplicate_json_key": 2,
+        "error_wrong_tool_multiset": 39,
+        "error_wrong_value_type": 5,
+        "error_missing_call": 15,
+        "error_extra_call": 9,
+        "error_truncated_tool_call": 1,
+        "transition": {
+          "0->0": 92,
+          "1->1": 63,
+          "0->1": 3,
+          "1->0": 1
+        },
+        "training_seconds": 1950.4072180000003,
+        "peak_allocated_mib": 1427.03466796875,
+        "min_available_host_ram_gib": 3.872547149658203,
+        "max_sampled_device_used_mib": 1676
+      },
+      "gate_43": {
+        "n": 159,
+        "tool": 108,
+        "keys": 83,
+        "strict": 66,
+        "error_missing_parameter": 24,
+        "error_wrong_value": 29,
+        "error_extra_parameter": 18,
+        "error_missing_call": 17,
+        "error_wrong_tool_multiset": 40,
+        "error_invalid_json": 5,
+        "error_duplicate_json_key": 2,
+        "error_wrong_value_type": 5,
+        "error_invalid_tool_call_count": 3,
+        "error_extra_call": 8,
+        "error_truncated_tool_call": 1,
+        "transition": {
+          "0->0": 90,
+          "1->1": 61,
+          "0->1": 5,
+          "1->0": 3
+        },
+        "training_seconds": 1994.0747773000003,
+        "peak_allocated_mib": 1429.38232421875,
+        "min_available_host_ram_gib": 1.691436767578125,
+        "max_sampled_device_used_mib": 1630
+      },
+      "gate_44": {
+        "n": 159,
+        "tool": 113,
+        "keys": 88,
+        "strict": 67,
+        "error_invalid_tool_call_count": 1,
+        "error_wrong_value": 30,
+        "error_extra_parameter": 17,
+        "error_invalid_json": 8,
+        "error_duplicate_json_key": 2,
+        "error_missing_parameter": 21,
+        "error_wrong_tool_multiset": 33,
+        "error_wrong_value_type": 6,
+        "error_missing_call": 13,
+        "error_truncated_tool_call": 2,
+        "error_extra_call": 7,
+        "transition": {
+          "0->0": 91,
+          "0->1": 4,
+          "1->1": 63,
+          "1->0": 1
+        },
+        "training_seconds": 1990.5906486000022,
+        "peak_allocated_mib": 1428.73486328125,
+        "min_available_host_ram_gib": 5.084869384765625,
+        "max_sampled_device_used_mib": 1648
+      },
+      "random_42": {
+        "n": 159,
+        "tool": 104,
+        "keys": 81,
+        "strict": 63,
+        "error_missing_parameter": 23,
+        "error_wrong_value": 29,
+        "error_extra_parameter": 17,
+        "error_invalid_json": 5,
+        "error_duplicate_json_key": 2,
+        "error_invalid_tool_call_count": 1,
+        "error_extra_call": 19,
+        "error_wrong_tool_multiset": 45,
+        "error_wrong_value_type": 8,
+        "error_missing_call": 9,
+        "error_duplicate_call": 1,
+        "error_truncated_tool_call": 2,
+        "transition": {
+          "0->0": 89,
+          "0->1": 6,
+          "1->0": 7,
+          "1->1": 57
+        },
+        "training_seconds": 2146.1728289000002,
+        "peak_allocated_mib": 1428.0,
+        "min_available_host_ram_gib": 3.905292510986328,
+        "max_sampled_device_used_mib": 1656
+      },
+      "random_43": {
+        "n": 159,
+        "tool": 101,
+        "keys": 77,
+        "strict": 60,
+        "error_missing_parameter": 22,
+        "error_wrong_value": 27,
+        "error_extra_parameter": 16,
+        "error_missing_call": 14,
+        "error_wrong_tool_multiset": 38,
+        "error_invalid_json": 16,
+        "error_duplicate_json_key": 2,
+        "error_wrong_value_type": 6,
+        "error_truncated_tool_call": 1,
+        "error_extra_call": 8,
+        "error_invalid_tool_call_count": 1,
+        "transition": {
+          "0->0": 94,
+          "1->1": 59,
+          "1->0": 5,
+          "0->1": 1
+        },
+        "training_seconds": 2123.610371900002,
+        "peak_allocated_mib": 1417.64990234375,
+        "min_available_host_ram_gib": 1.9365577697753906,
+        "max_sampled_device_used_mib": 1610
+      },
+      "random_44": {
+        "n": 159,
+        "tool": 110,
+        "keys": 86,
+        "strict": 65,
+        "error_missing_parameter": 25,
+        "error_wrong_value": 29,
+        "error_extra_parameter": 15,
+        "error_duplicate_json_key": 2,
+        "error_wrong_value_type": 8,
+        "error_invalid_tool_call_count": 3,
+        "error_invalid_json": 8,
+        "error_missing_call": 13,
+        "error_wrong_tool_multiset": 35,
+        "error_extra_call": 9,
+        "error_truncated_tool_call": 1,
+        "transition": {
+          "0->0": 92,
+          "1->1": 62,
+          "0->1": 3,
+          "1->0": 2
+        },
+        "training_seconds": 2017.3703907999989,
+        "peak_allocated_mib": 1428.73486328125,
+        "min_available_host_ram_gib": 4.52197265625,
+        "max_sampled_device_used_mib": 1656
+      }
+    },
+    "mask_stats": {
+      "identity_42": {
+        "groups": 200,
+        "all_wrong": 94,
+        "raw_nonzero": 118,
+        "masked_nonzero": 0,
+        "retained_nonzero": 118
+      },
+      "identity_43": {
+        "groups": 200,
+        "all_wrong": 100,
+        "raw_nonzero": 108,
+        "masked_nonzero": 0,
+        "retained_nonzero": 108
+      },
+      "identity_44": {
+        "groups": 200,
+        "all_wrong": 86,
+        "raw_nonzero": 116,
+        "masked_nonzero": 0,
+        "retained_nonzero": 116
+      },
+      "gate_42": {
+        "groups": 200,
+        "all_wrong": 97,
+        "raw_nonzero": 112,
+        "masked_nonzero": 59,
+        "retained_nonzero": 53
+      },
+      "gate_43": {
+        "groups": 200,
+        "all_wrong": 94,
+        "raw_nonzero": 115,
+        "masked_nonzero": 59,
+        "retained_nonzero": 56
+      },
+      "gate_44": {
+        "groups": 200,
+        "all_wrong": 89,
+        "raw_nonzero": 110,
+        "masked_nonzero": 56,
+        "retained_nonzero": 54
+      },
+      "random_42": {
+        "groups": 200,
+        "all_wrong": 108,
+        "raw_nonzero": 126,
+        "masked_nonzero": 70,
+        "retained_nonzero": 56
+      },
+      "random_43": {
+        "groups": 200,
+        "all_wrong": 94,
+        "raw_nonzero": 115,
+        "masked_nonzero": 65,
+        "retained_nonzero": 50
+      },
+      "random_44": {
+        "groups": 200,
+        "all_wrong": 85,
+        "raw_nonzero": 121,
+        "masked_nonzero": 61,
+        "retained_nonzero": 60
+      }
+    },
+    "seed_mean_contrasts": {
+      "gate-identity": {
+        "difference_pp": -1.257861635220126,
+        "conditional_fixed_seed_sample_ci95_pp": [
+          -2.935010482180293,
+          0.41928721174004197
+        ],
+        "per_seed_pp": [
+          -1.257861635220126,
+          -0.628930817610063,
+          -1.8867924528301887
+        ],
+        "scope": "Exploratory old test; conditional on three training seeds"
+      },
+      "random-identity": {
+        "difference_pp": -3.563941299790356,
+        "conditional_fixed_seed_sample_ci95_pp": [
+          -5.870020964360586,
+          -1.4675052410901466
+        ],
+        "per_seed_pp": [
+          -3.1446540880503147,
+          -4.40251572327044,
+          -3.1446540880503147
+        ],
+        "scope": "Exploratory old test; conditional on three training seeds"
+      },
+      "gate-random": {
+        "difference_pp": 2.3060796645702304,
+        "conditional_fixed_seed_sample_ci95_pp": [
+          0.41928721174004197,
+          4.40251572327044
+        ],
+        "per_seed_pp": [
+          1.8867924528301887,
+          3.7735849056603774,
+          1.257861635220126
+        ],
+        "scope": "Exploratory old test; conditional on three training seeds"
+      }
+    }
+  }
+}
